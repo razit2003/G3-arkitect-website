@@ -56,5 +56,36 @@ color:  #131313;
     color: #727272;
     font-size: 16px;
 }
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E; 
+padding: 20px 25px;
+color: white;
+font-size: 1.25rem;
+cursor: pointer;
+border: 0;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+@media screen and (max-width:576px)  {
+    header{
+        padding: 20px;
+    }
 
+nav {
+    flex-direction: column;
+}
+
+}
+
+@media screen and(min-width:576px) and (max-width:990px) {
+    header{
+        padding: 20px;
+    }
    
+    nav{
+        flex-direction: column;
+    }
+}
