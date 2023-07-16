@@ -155,44 +155,68 @@ main {
 .sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
-gap: 40px;
+    gap: 40px;
     margin-top: 50px;
-align-items: center;
+    align-items: center;
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
     width: 165px;
 }
 
-.features{
+.features {
     margin-top: 130px;
     display: flex;
-gap: 100px;}
+    gap: 100px;
+}
 
-.feature-content .card{
+.feature-content .card {
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.ten-years-batch{
+
+.ten-years-batch {
     border-radius: 8px;
-background: #FF900E;
-color: white;
-width:342px ;
-padding:40px ;
-}
-.ten-years-batch h2{
- font-size: 4rem;
-
-}
-
-.features .section-title{
-    border-left:5px solid #FF900E ;
-padding-left: 20px;
+    background: #FF900E;
+    color: white;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 
+.ten-years-batch h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-batch p {
+    font: 1.5rem;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 50px;
+}
+.last{
+    border-radius:8px ;
+    background: #FFF4E7;;
+text-align: center;
+width: 100%;
+justify-content: space-around;
+}
+.post{
+    padding:50px ;
+}
 
 @media screen and (max-width:576px) {
     header {
@@ -201,14 +225,15 @@ padding-left: 20px;
 
     nav,
     .teams-container,
-    .facts-card-container{
-   
+    .facts-card-container {
+
         flex-direction: column;
     }
 
-    .sponsors-img-container{
+    .sponsors-img-container {
         flex-direction: column;
     }
+
     .teams-img-container {
         grid-template-columns: 1fr;
     }
@@ -224,7 +249,20 @@ padding-left: 20px;
         gap: 20px;
     }
 
+    .features {
+        flex-direction: column;
+    }
+.feature-img img{
+    width: 90%;
+    margin-left: 0;
 }
+.ten-years-batch{
+    position: static;
+   max-width: 300px;
+}
+
+}
+
 
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
@@ -235,10 +273,11 @@ padding-left: 20px;
         flex-direction: column;
     }
 
-    .teams-container {
+    .teams-container,.features {
         flex-direction: column;
     }
-    .sponsors-img-container{
+
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
