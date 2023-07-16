@@ -115,7 +115,11 @@ main {
     font-weight: 700;
 }
 
-
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(19, 19, 19, 1);
+}
 
 
 
@@ -155,7 +159,7 @@ main {
         padding: 20px;
     }
 
-    nav,
+    nav
      {
         flex-direction: column;
     }
